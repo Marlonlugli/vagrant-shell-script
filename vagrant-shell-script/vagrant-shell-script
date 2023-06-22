@@ -1,0 +1,11 @@
+Vagrant.configure("2") do |config|
+    config.vm.provider "virtualbox" do |v|
+        v.name = "maquina_ubuntu"
+    end
+     config.vm.box = "hashicorp/bionic64"
+     config.vm.network "public_network"
+     #username = marlon
+     #password = marlon
+     config.vm.provision "shell",
+       path: "script.sh"
+end
