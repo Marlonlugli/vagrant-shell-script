@@ -1,6 +1,6 @@
 #!/bin/bash
 
-adduser = "marlon"
+useradd = "marlon"
 apt update
 apt install -y vim
 apt install -y curl
